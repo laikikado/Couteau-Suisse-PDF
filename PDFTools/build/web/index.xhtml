@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>PDF Tools</title>
+    </h:head>
+    <h:body>
+        <h1>PDF TOOLS</h1>
+        <h2>Choisissez un service</h2>
+        <a href="FusionnerPages.xhtml">Fusion de PDF</a><br/>
+        <a href="SupprimerPages.xhtml">Suppression de page PDF</a><br/>
+        <a href="ExtrairePages.xhtml">Extraction de page PDF d’un fichier</a><br/>
+        <a href="TrierPages.xhtml">Trier les pages du fichier PDF</a><br/>
+        <a href="ImageEnPdf.xhtml">Image en PDF</a><br/>
+        <a href="ExtraireImage.xhtml">Extraire image d’un fichier PDF</a><br/>
+        <a href="SignerPdf.xhtml">Signer PDF</a><br/><br/>
+        <h:form>
+        Ajouter un PDF<br/>
+        <p:fileUpload value="#{fileUploadView.file}" mode="simple" skinSimple="true"/>
+        <br/>
+        <p:commandButton value="Submit" ajax="false" action="#{fileUploadView.upload}"/>
+        </h:form>
+    </h:body>
+</html>
