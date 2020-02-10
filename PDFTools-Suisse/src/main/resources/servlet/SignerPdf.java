@@ -33,9 +33,9 @@ import javax.servlet.http.HttpServletResponse;
 import org.bouncycastle.jce.provider.BouncyCastleProvider;
 
 @WebServlet(name = "SignerPDF", urlPatterns = {"/SignerPDF"})
-public class SignerPDF extends HttpServlet {
+public class SignerPdf extends HttpServlet {
 
-    public static final String DEST = "C:\\Users\\Alexandre\\Documents\\GitHub\\Couteau-Suisse-PDF\\PDFTools-Suisse\\src\\main\\webapp\\PDF\\Signature\\SignatureEnregistrées";
+    public static final String DEST = "C:\\Users\\Alexandre\\Documents\\GitHub\\Couteau-Suisse-PDF\\PDFTools-Suisse\\src\\main\\webapp\\PDF\\Signature\\SignatureEnregistr?es";
     public static final String KEYSTORE = "C:\\Users\\Alexandre\\Documents\\GitHub\\Couteau-Suisse-PDF\\PDFTools-Suisse\\src\\main\\webapp\\PDF\\Signature\\KEYSTORE";
     public static final String SRC = "C:\\Users\\Alexandre\\Documents\\GitHub\\Couteau-Suisse-PDF\\PDFTools-Suisse\\src\\main\\webapp\\PDF\\Signature\\signature.pdf";
     public static final char[] PASSWORD = "password".toCharArray();
@@ -81,7 +81,7 @@ public class SignerPDF extends HttpServlet {
         PrivateKey pk = (PrivateKey) ks.getKey(alias, PASSWORD);
         Certificate[] chain = ks.getCertificateChain(alias);
 
-        servlet.SignerPDF app = new servlet.SignerPDF();
+        servlet.SignerPdf app = new servlet.SignerPdf();
         app.sign(SRC, DEST + RESULT_FILES[0], chain, pk, DigestAlgorithms.SHA256, provider.getName(),
                 PdfSigner.CryptoStandard.CMS, "Signature1", "Test");
         app.sign(SRC, DEST + RESULT_FILES[1], chain, pk, DigestAlgorithms.SHA512, provider.getName(),
@@ -99,13 +99,13 @@ public class SignerPDF extends HttpServlet {
         try {
             processRequest(request, response);
         } catch (CertificateException ex) {
-            Logger.getLogger(SignerPDF.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(SignerPdf.class.getName()).log(Level.SEVERE, null, ex);
         } catch (KeyStoreException ex) {
-            Logger.getLogger(SignerPDF.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(SignerPdf.class.getName()).log(Level.SEVERE, null, ex);
         } catch (UnrecoverableKeyException ex) {
-            Logger.getLogger(SignerPDF.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(SignerPdf.class.getName()).log(Level.SEVERE, null, ex);
         } catch (GeneralSecurityException ex) {
-            Logger.getLogger(SignerPDF.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(SignerPdf.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 
@@ -115,13 +115,13 @@ public class SignerPDF extends HttpServlet {
         try {
             processRequest(request, response);
         } catch (CertificateException ex) {
-            Logger.getLogger(SignerPDF.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(SignerPdf.class.getName()).log(Level.SEVERE, null, ex);
         } catch (KeyStoreException ex) {
-            Logger.getLogger(SignerPDF.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(SignerPdf.class.getName()).log(Level.SEVERE, null, ex);
         } catch (UnrecoverableKeyException ex) {
-            Logger.getLogger(SignerPDF.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(SignerPdf.class.getName()).log(Level.SEVERE, null, ex);
         } catch (GeneralSecurityException ex) {
-            Logger.getLogger(SignerPDF.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(SignerPdf.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 

@@ -5,16 +5,103 @@
       xmlns:p="http://primefaces.org/ui">
     <h:head>
         <title>PDF Tools</title>
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"></link>
+        <link href="style.css" rel="stylesheet"></link>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="script.js"></script>
     </h:head>
     <h:body>
-        <h1>PDF TOOLS</h1>
-        <h2>Choisissez un service</h2>
-        <a href="faces/Services/FusionnerPages.xhtml">Fusion de PDF</a><br/>
-        <a href="faces/Services/SupprimerPages.xhtml">Suppression de page PDF</a><br/>
-        <a href="faces/Services/ExtrairePages.xhtml">Extraction de page PDF d'un fichier</a><br/>
-        <a href="faces/Services/TrierPages.xhtml">Trier les pages du fichier PDF</a><br/>
-        <a href="faces/Services/ImageEnPdf.xhtml">Image en PDF</a><br/>
-        <a href="faces/Services/ExtraireImage.xhtml">Extraire image d'un fichier PDF</a><br/>
-        <a href="faces/Services/SignerPdf.xhtml">Signer PDF</a><br/><br/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+
+        <h1 class="display-1 text-center">PDF TOOLS</h1>
+
+        <section class="iq-features">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-3 col-md-12"></div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="holderCircle">
+                            <div class="round"></div>
+                            <div class="dotCircle">
+                                <a href="faces/Services/FusionnerPages.xhtml">
+                                    <span class="itemDot active itemDot1" data-tab="1">
+                                        <i class="fa fa-files-o"></i>
+                                        <span class="forActive"></span>
+                                    </span>
+                                </a>
+                                <a href="faces/Services/SupprimerPages.xhtml">
+                                    <span class="itemDot itemDot2" data-tab="2">
+                                        <i class="fa fa-minus-square"></i>
+                                        <span class="forActive"></span>
+                                    </span>
+                                </a>
+                                <a href="faces/Services/TrierPages.xhtml">
+                                    <span class="itemDot itemDot3" data-tab="3">
+                                        <i class="fa fa-sort-amount-desc"></i>
+                                        <span class="forActive"></span>
+                                    </span>
+                                </a>
+                                <a href="faces/Services/ImageEnPdf.xhtml">
+                                    <span class="itemDot itemDot4" data-tab="4">
+                                        <i class="fa fa-file-image-o"></i>
+                                        <span class="forActive"></span>
+                                    </span>
+                                </a>
+                                <a href="faces/Services/ExtraireImage.xhtml">
+                                    <span class="itemDot itemDot5" data-tab="5">
+                                        <i class="fa fa-picture-o"></i>
+                                        <span class="forActive"></span>
+                                    </span>
+                                </a>
+                                <a href="faces/Services/SignerPdf.xhtml">
+                                    <span class="itemDot itemDot6" data-tab="6">
+                                        <i class="fa fa-pencil-square-o"></i>
+                                        <span class="forActive"></span>
+                                    </span>
+                                </a>
+                                <a href="faces/Services/ExtrairePages.xhtml">
+                                    <span class="itemDot itemDot7" data-tab="7">
+                                        <i class="fa fa-crosshairs"></i>
+                                        <span class="forActive"></span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="contentCircle">
+                                <div class="CirItem title-box active CirItem1">
+                                    <h2 class="title"><span>Fusion de PDF</span></h2>
+                                    <i class="fa fa-files-o"></i>
+                                </div>
+                                <div class="CirItem title-box CirItem2">
+                                    <h2 class="title"><span>Suppression de pages PDF</span></h2>
+                                    <i class="fa fa-minus-square"></i>
+                                </div>
+                                <div class="CirItem title-box CirItem3">
+                                    <h2 class="title"><span>Trier les pages d'un PDF</span></h2>
+                                    <i class="fa fa-sort-amount-desc"></i>
+                                </div>
+                                <div class="CirItem title-box CirItem4">
+                                    <h2 class="title"><span>Image en PDF</span></h2>
+                                    <i class="fa fa-file-image-o"></i>
+                                </div>
+                                <div class="CirItem title-box CirItem5">
+                                    <h2 class="title"><span>Extraire image d'un fichier PDF</span></h2>
+                                    <i class="fa fa-picture-o"></i>
+                                </div>
+                                <div class="CirItem title-box CirItem6">
+                                    <h2 class="title"><span>Signer PDF</span></h2>
+                                    <i class="fa fa-pencil-square-o"></i>
+                                </div>
+                                <div class="CirItem title-box CirItem7">
+                                    <h2 class="title"><span>Extraction de page PDF d'un fichier</span></h2>
+                                    <i class="fa fa-crosshairs"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-12"></div>
+                </div>
+            </div>
+        </section>
     </h:body>
 </html>

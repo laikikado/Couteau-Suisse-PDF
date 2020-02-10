@@ -5,13 +5,14 @@
     <h:head>
         <title>Signer un PDF</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"></link>
     </h:head>
     <h:body>
-        <h1>Signer un PDF</h1>
+        <h1 class="display-4 text-center">Signer un PDF</h1>
         <object data="../PDF/Fusion/fusion1.pdf" type="application/pdf" width="400" height="600"></object>
         <h:form>
             <p>Signer le PDF</p>
-            <p:commandButton value="Signer" ajax="false" action="#{SignerPDF.sign}"/>
+            <p:commandButton value="Signer" ajax="false" action="#{SignerPdf.sign}"/>
         </h:form>
     </h:body>
 </html>
