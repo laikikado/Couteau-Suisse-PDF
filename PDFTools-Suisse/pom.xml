@@ -25,6 +25,23 @@
             <version>7.1.9</version>
             <type>pom</type>
         </dependency>
+        <dependency>
+            <groupId>com.itextpdf</groupId>
+            <artifactId>layout</artifactId>
+            <version>7.1.9</version>
+            <type>jar</type>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.tomcat.embed</groupId>
+            <artifactId>tomcat-embed-core</artifactId>
+            <version>9.0.30</version>
+            <type>jar</type>
+        </dependency>
+        <dependency>
+            <groupId>org.bouncycastle</groupId>
+            <artifactId>bcprov-jdk16</artifactId>
+            <version>1.44</version>
+        </dependency>
     </dependencies>
     <pluginRepositories>
         <pluginRepository>

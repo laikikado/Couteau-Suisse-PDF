@@ -16,11 +16,5 @@
         <a href="faces/Services/ImageEnPdf.xhtml">Image en PDF</a><br/>
         <a href="faces/Services/ExtraireImage.xhtml">Extraire image d'un fichier PDF</a><br/>
         <a href="faces/Services/SignerPdf.xhtml">Signer PDF</a><br/><br/>
-        <h:form>
-        Ajouter un PDF<br/>
-        <p:fileUpload value="#{fileUploadView.file}" mode="simple" skinSimple="true"/>
-        <br/>
-        <p:commandButton value="Submit" ajax="false" action="#{fileUploadView.upload}"/>
-        </h:form>
     </h:body>
 </html>
