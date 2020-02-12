@@ -9,10 +9,10 @@
     </h:head>
     <h:body>
         <h1 class="display-4 text-center">Signer un PDF</h1>
-        <object data="../PDF/Fusion/fusion1.pdf" type="application/pdf" width="400" height="600"></object>
+        <object data="../PDF/SignerPdf/signature.pdf" type="application/pdf" width="400" height="600"></object>
         <h:form>
             <p>Signer le PDF</p>
-            <p:commandButton value="Signer" ajax="false" action="#{SignerPdf.sign}"/>
+            <p:commandButton value="Signer" ajax="false" action="SignerPdf.java"/>
         </h:form>
     </h:body>
 </html>
